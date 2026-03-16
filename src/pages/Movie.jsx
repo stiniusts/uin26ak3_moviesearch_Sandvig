@@ -69,29 +69,16 @@ export default function Movie() {
           </figure>
         )}
 
-        <dl>
-          <dt>År</dt>
-          <dd>{film.Year}</dd>
-
-          <dt>Sjanger</dt>
-          <dd>{film.Genre}</dd>
-
-          <dt>Regi</dt>
-          <dd>{film.Director}</dd>
-
-          <dt>Skuespillere</dt>
-          <dd>{film.Actors}</dd>
-
-          <dt>Varighet</dt>
-          <dd>{film.Runtime}</dd>
-
+        <section>
+          <p><strong>År:</strong> {film.Year}</p>
+          <p><strong>Sjanger:</strong> {film.Genre}</p>
+          <p><strong>Regi:</strong> {film.Director}</p>
+          <p><strong>Skuespillere:</strong> {film.Actors}</p>
+          <p><strong>Varighet:</strong> {film.Runtime}</p>
           {film.imdbRating !== "N/A" && (
-            <>
-              <dt>IMDb-vurdering</dt>
-              <dd>{film.imdbRating}/10</dd>
-            </>
+            <p><strong>IMDb-vurdering:</strong> {film.imdbRating}/10</p>
           )}
-        </dl>
+        </section>
 
         {film.Plot !== "N/A" && (
           <section>
