@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 
-const API_KEY = "2b6ce5f9"
+const API_KEY = import.meta.env.VITE_OMDB_API_KEY
 
 export default function Home() {
   const [search, setSearch] = useState("")
