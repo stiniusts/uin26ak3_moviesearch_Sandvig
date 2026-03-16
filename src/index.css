@@ -8,30 +8,9 @@ body {
   font-family: sans-serif;
   background-color: #f5f5f5;
   color: #222;
-}
-
-#root {
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 2rem;
 }
 
-/* Header / nav */
-nav {
-  margin-bottom: 1rem;
-}
-
-nav a {
-  color: #555;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Forsiden */
 h1 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -40,59 +19,34 @@ h1 {
 h2 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #444;
 }
 
-/* Søkefelt */
 label {
   display: block;
-  font-size: 0.9rem;
   margin-bottom: 0.4rem;
-  color: #555;
 }
 
 input[type="search"] {
-  width: 100%;
-  max-width: 500px;
-  padding: 0.6rem 1rem;
+  padding: 0.5rem;
   font-size: 1rem;
+  width: 300px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
+  border-radius: 4px;
 }
 
-input[type="search"]:focus {
-  border-color: #666;
-}
-
-/* Liten hjelpetekst under søkefeltet */
-section > p {
-  margin-top: 0.4rem;
-  font-size: 0.85rem;
-  color: #888;
-}
-
-/* Filmliste */
 ul {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
 li {
   background: #fff;
-  border-radius: 8px;
+  border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-li:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 li img {
@@ -102,16 +56,15 @@ li img {
 
 li h3 {
   font-size: 0.9rem;
-  padding: 0.5rem 0.6rem 0.2rem;
+  padding: 0.4rem;
 }
 
 li p {
   font-size: 0.8rem;
   color: #888;
-  padding: 0 0.6rem 0.6rem;
+  padding: 0 0.4rem 0.4rem;
 }
 
-/* Ingen plakat */
 li span {
   display: flex;
   align-items: center;
@@ -122,9 +75,13 @@ li span {
   font-size: 0.8rem;
 }
 
-/* Filmside */
-article {
-  max-width: 700px;
+nav {
+  margin-bottom: 1rem;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
 }
 
 article h1 {
@@ -132,13 +89,12 @@ article h1 {
 }
 
 article figure {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 article figure img {
   width: 200px;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 dl {
@@ -151,15 +107,12 @@ dl {
 dt {
   font-weight: bold;
   color: #555;
-  font-size: 0.9rem;
 }
 
 dd {
-  font-size: 0.9rem;
   color: #333;
 }
 
 article section p {
   line-height: 1.7;
-  color: #444;
 }
